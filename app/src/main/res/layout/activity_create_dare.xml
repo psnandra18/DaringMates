@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateDare">
+
+    <TextView
+        android:id="@+id/txt_dare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/pacifico"
+        android:text="Dare your friend..."
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_dareTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Dare Title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txt_dare"
+        android:fontFamily="@font/montserrat"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_dareDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Dare Discription"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/edt_dareTitle"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_sendDare"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_dareDesc"
+        android:text="Send Dare"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_suggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestions:"
+        android:fontFamily="@font/montserrat"
+        android:textSize="@dimen/_15sdp"
+        android:layout_below="@id/btn_sendDare"
+        android:padding="@dimen/_8sdp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_darelist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_below="@+id/txt_suggest"
+        tools:listitem="@layout/dare_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:visibility="visible" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "499465748112",
+    "project_id": "daringmates",
+    "firebase_url": "https://daringmates-default-rtdb.europe-west1.firebasedatabase.app",
+    "storage_bucket": "daringmates.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499465748112:android:3e6026cafa6d0ea1dea215",
+        "android_client_info": {
+          "package_name": "com.mavericks.daringmates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499465748112-sppu540fnlrge9f6a7i592pjdo828cne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCN4xMZDTE_ewowCrw6ifN2B_27_sfTYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499465748112-sppu540fnlrge9f6a7i592pjdo828cne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
